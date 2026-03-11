@@ -11,6 +11,8 @@ public record GameResult(
         Double rating,
         @JsonProperty("ratings_count")
         Long ratingCounts,
+        @JsonProperty("background_image")
+        String backgroundImage,
         @JsonProperty("released")
         String released
 ) {
