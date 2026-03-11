@@ -4,6 +4,8 @@ public record RecommendationResponse(
         String name,
         double rating,
         Long ratingCounts,
+        String backgroundImage,
         String recommendation
+
 )
 {}
