@@ -32,6 +32,7 @@ public class GameService {
                 gameResult.name(),
                 gameResult.rating(),
                 gameResult.ratingCounts(),
+                gameResult.backgroundImage(),
                 recommendation
         );
     }
