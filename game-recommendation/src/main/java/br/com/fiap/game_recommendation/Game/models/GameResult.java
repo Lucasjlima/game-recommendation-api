@@ -1,4 +1,4 @@
-package br.com.fiap.game_recommendation.models;
+package br.com.fiap.game_recommendation.Game.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
