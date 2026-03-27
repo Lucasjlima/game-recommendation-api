@@ -1,7 +1,7 @@
-package br.com.fiap.game_recommendation.controller;
+package br.com.fiap.game_recommendation.Game.controller;
 
-import br.com.fiap.game_recommendation.models.RecommendationResponse;
-import br.com.fiap.game_recommendation.services.GameService;
+import br.com.fiap.game_recommendation.Game.models.RecommendationResponse;
+import br.com.fiap.game_recommendation.Game.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
