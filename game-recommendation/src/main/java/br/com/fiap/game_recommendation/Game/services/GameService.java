@@ -1,8 +1,8 @@
-package br.com.fiap.game_recommendation.services;
+package br.com.fiap.game_recommendation.Game.services;
 
-import br.com.fiap.game_recommendation.models.GameResult;
-import br.com.fiap.game_recommendation.models.RawgResponse;
-import br.com.fiap.game_recommendation.models.RecommendationResponse;
+import br.com.fiap.game_recommendation.Game.models.GameResult;
+import br.com.fiap.game_recommendation.Game.models.RawgResponse;
+import br.com.fiap.game_recommendation.Game.models.RecommendationResponse;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
