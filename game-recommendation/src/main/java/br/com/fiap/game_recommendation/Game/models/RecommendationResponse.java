@@ -1,4 +1,4 @@
-package br.com.fiap.game_recommendation.models;
+package br.com.fiap.game_recommendation.Game.models;
 
 public record RecommendationResponse(
         String name,
