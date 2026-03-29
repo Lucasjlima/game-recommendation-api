@@ -3,21 +3,20 @@ package br.com.fiap.game_recommendation.Game.services;
 import br.com.fiap.game_recommendation.Game.models.GameResult;
 import br.com.fiap.game_recommendation.Game.models.RawgResponse;
 import br.com.fiap.game_recommendation.Game.models.RecommendationResponse;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 
 @Service
+@RequiredArgsConstructor
 public class GameService {
     @Value("${rawg.api.key}")
     private String apiKey;
 
     RawgService rawgService;
 
-    public GameService(RawgService rawgService) {
-        this.rawgService = rawgService;
-    }
 
     public RawgResponse getGame(String name) {
         return rawgService.getRawg(apiKey, name);
@@ -47,7 +46,7 @@ public class GameService {
     private boolean isHighlyRecommended(GameResult game) {
         LocalDate releaseDate = LocalDate.parse(game.released());
         boolean isCurrent = releaseDate.isAfter(LocalDate.now().minusYears(10));
-        return game.rating() >= 4.5  && game.ratingCounts() >= 400 && isCurrent;
+        return game.rating() >= 4.5 && game.ratingCounts() >= 400 && isCurrent;
     }
 
     private boolean isWorthIt(GameResult game) {
